@@ -1,2 +1,2 @@
-# speedvote.codefactory.dev
-Website
+# Speed Vote
+Github pages landing site
