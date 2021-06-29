@@ -24,3 +24,11 @@ Public workflows
 - Election Officer prepares the Questions
 - Election officer locks down the Questions and broadcasts them to the user (at this point the questions are prepared but not yet ready for use)
 - When the "unlock time" has passed, the users are now allowed to participate in the election process
+
+### Tech Stack
+- CloudFormation
+- Proton
+- DynamoDB
+- Lambda
+- Cognito
+- AppSync
