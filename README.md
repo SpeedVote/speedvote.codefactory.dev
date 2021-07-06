@@ -5,10 +5,10 @@ A highly scalable and available mobile voting system.
 
 
 ## Users
-- Admin
-- Election Officer
-- KYC Officer
-- Voter
+- Admin (Config and Internal User management)
+- Election Officer (Poll creation)
+- KYC Officer (Manual user verification)
+- Voter (General public, poll participants)
 
 ## Workflows
 Public workflows 
@@ -23,12 +23,23 @@ Public workflows
 ### Election
 - Election Officer prepares the Questions
 - Election officer locks down the Questions and broadcasts them to the user (at this point the questions are prepared but not yet ready for use)
-- When the "unlock time" has passed, the users are now allowed to participate in the election process
+- After the "unlock time", the users are now allowed to participate in the election process
+- Before the "deadline", users will no longer be allowed to vote
+- When the user "locks" the vote, he will no longer be allowed to vote and all the related information needed to verify his vote will be uploaded to S3 as well as duplicated in DynamoDB
+- The actual casting of the ballot will involve fetching the user's current location as well as a "selfie video" to verify his identity 
 
-### Tech Stack
+### User Activity
+- all user activity will be tracked
+
+## Tech Stack
 - CloudFormation
-- Proton
 - DynamoDB
 - Lambda
 - Cognito
 - AppSync
+- Kinesis Firehose
+- S3
+
+## Architecture
+<insert diagram for recording real-time user activity>
+<insert diagram for casting the actual ballot in the poll>
