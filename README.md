@@ -14,8 +14,9 @@ A highly scalable and available mobile voting system.
 Public workflows 
 
 ### User Registration
-- Anonymous user applies for an account using a unique email
-- Email is verified and the account is created with a "For Verification" status
+- Anonymous user applies for an account using a unique email or mobile number
+- Once verified, he/she will then need to submitt a face photo+video and signature as well as his personal details matching the national identification system
+- Additionally he will need to pick his locality information, as well as enter some personal information
 - A verification request is sent to the KYC Officer
 - The KYC officer approves the verification status of the user
 - The user is now a legit Voter
