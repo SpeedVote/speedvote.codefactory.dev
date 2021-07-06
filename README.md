@@ -41,5 +41,7 @@ Public workflows
 - S3
 
 ## Architecture
+```
 <insert diagram for recording real-time user activity>
 <insert diagram for casting the actual ballot in the poll>
+```
