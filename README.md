@@ -30,6 +30,7 @@ Public workflows
 
 ### User Activity
 - all user activity will be tracked
+- live dashboard for current poll (estimated)
 
 ## Tech Stack
 - CloudFormation
