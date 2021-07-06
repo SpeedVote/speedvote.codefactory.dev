@@ -11,7 +11,7 @@ A highly scalable and available mobile voting system.
 - Voter (General public, poll participants)
 
 ## Workflows
-Public workflows 
+Public workflows - internal user management will be discussed in a separate document
 
 ### User Registration
 - Anonymous user applies for an account using a unique email or mobile number
