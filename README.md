@@ -28,11 +28,11 @@ Public workflows - internal user management will be discussed in a separate docu
 - Before the "deadline", users will no longer be allowed to vote
 - When the user "locks" the vote, he will no longer be allowed to vote and all the related information needed to verify his vote will be uploaded to S3 as well as duplicated in DynamoDB
 - The actual casting of the ballot will involve fetching the user's current location as well as a "selfie video" to verify his identity together with a signature. In case of election protests/recounts, the raw file will be used for manual verification
-- Make sure S3 is locked for editing (s3 object lock)
+- Make sure S3 is locked for editing and deletion (s3 object lock)
 
 ### User Activity
-- all user activity will be tracked
-- live dashboard for current poll (estimated)
+- all user activity will be tracked (realtime stream)
+- live dashboard for current poll (estimated based on the stream of live activity)
 
 ## Tech Stack
 - CloudFormation
